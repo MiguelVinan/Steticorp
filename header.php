@@ -24,3 +24,30 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <!-- DESPONSIVE -->
+
+    <header class="cover row">
+      <div class="coverContainer col-xs-12">
+        <button type="button" name="button" class="coverContainer_boton"><i class="icon-bamboo2"></i></button>
+      </div>
+      <nav class="coverMenu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">SOBRE NOSOTROS</a></li>
+          <li><a href="#">CONTÁCTANOS</a></li>
+        </ul>
+      </nav>
+      <figure class="coverImagen">
+        <img src="" alt="" />
+      </figure>
+        <figure class="coverLogo col-xs-12">
+          <img src="<?= get_template_directory_uri() . '/assets/images/logo.png' ?>" />
+        </figure>
+        <div class="coverDatos">
+          <h1>Tratamientos Corporales</h1>
+          <p>“ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. “</p>
+        </div>
+
+    </header>
