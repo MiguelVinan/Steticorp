@@ -1,0 +1,52 @@
+.cover
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  z-index: 0
+  border-bottom: 7px solid $maize
+
+  &::before
+    content: ""
+    position: absolute
+    background-color: $color-hover-cover
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+
+  .coverLogo
+    position: relative
+    text-align: center
+    figure
+      .logo
+        width: 200px
+
+  .coverDatos
+    text-align: center
+    position: relative
+
+
++tablet
+  .cover
+    .coverLogo
+      margin-bottom: 80px
+      figure
+        .logo
+          width: 250px
+
+    .coverDatos
+      h1
+        margin-bottom: 15px
+
++desktop
+  .cover
+    .coverLogo
+      margin-bottom: 40px

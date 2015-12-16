@@ -16,7 +16,7 @@
   function enqueue_scripts() {
     // JS
     wp_enqueue_script('jquery-v1','https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',"", "", true);
-    wp_enqueue_script( 'appjs', get_template_directory_uri() . '/assets/js/app.min.js', array('jquery-v1'),'', true );
+    wp_enqueue_script( 'appjs', get_template_directory_uri() . '/assets/js/app.js', array('jquery-v1'),'', true );
 
     // if (is_home()) {
     //   wp_enqueue_script('home_script');
