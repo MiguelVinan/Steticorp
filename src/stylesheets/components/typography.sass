@@ -1,4 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700|Alex+Brush);
 
-html
+body
   font-family: 'Raleway'
+  color: $warm-gray
+  font-size: 14px
+
+h1
+  font-size: 30px
+  font-weight: $ultra-bold
++tablet
+  h1
+    font-size: 50px
+
+p
+  line-height: 22px
+  font-weight: $regular
+
+a
+  color: white
+  text-transform: uppercase
+  font-weight: $bold
+  transition: 0.3s ease
+  &:active,
+  &:focus
+    color: $reddish-pink
+    text-decoration: none
+
+  &:hover
+    text-decoration: none
+    color: $maize
