@@ -1,30 +1,52 @@
 .cover
   width: 100%
   height: 100vh
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  background-position: center
-  background-size: cover
-  background-repeat: no-repeat
   position: relative
-  z-index: 0
   border-bottom: 7px solid $maize
-
-  &::before
-    content: ""
-    position: absolute
-    background-color: $color-hover-cover
-    top: 0
-    left: 0
+  .carousel-indicators
+    .active
+      background-color: $reddish-pink
+      width: 15px
+      height: 15px
+    li
+      transition: 0.3s ease
+      margin-right: 15px
+      width: 12px
+      height: 12px
+      border: 2px solid white
+      &:last-child
+        margin-right: 0
+  .carousel-inner
     width: 100%
     height: 100%
-    z-index: 0
+    .item
+      height: 100vh
+      width: 100%
+      background-position: center center
+      background-size: cover
+      background-repeat: no-repeat
+      &::before
+        content: ""
+        position: absolute
+        background-color: $color-hover-cover
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 0
+      .carousel-caption
+        bottom: 10%
+        top: 30%
+        left: 0
+        right: 0
 
   .coverLogo
-    position: relative
+    position: absolute
     text-align: center
+    top: 15%
+    left: 0
+    right: 0
+    z-index: 1
     figure
       .logo
         width: 200px
@@ -36,6 +58,12 @@
 
 +tablet
   .cover
+    .carousel-inner
+      .item
+        .carousel-caption
+          bottom: 35%
+          left: 10%
+          right: 10%
     .coverLogo
       margin-bottom: 80px
       figure
@@ -50,3 +78,10 @@
   .cover
     .coverLogo
       margin-bottom: 40px
+    .carousel-inner
+      .item
+        .carousel-caption
+          .coverDatos
+            p
+              width: 500px
+              margin: 0 auto
