@@ -1,0 +1,30 @@
+.welcome
+  +flex(column,center,center)
+  text-align: center
+  padding-top: 80px
+  padding-bottom: 80px
+
+  &-flor
+    width: 80px
+
+  &-sectionTitle
+    text-align: center
+    p
+      margin-bottom: 40px
+      font-weight: $regular
+
++tablet
+  .welcome
+    position: relative
+    margin: 0 auto
+
+    &-sectionTitle
+      h2
+        margin-top: 15px
+      p
+        margin-bottom: 40px
+
+
+    &-content
+      p
+        text-align: left
