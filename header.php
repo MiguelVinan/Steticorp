@@ -24,11 +24,13 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header class="menu row">
+    <header class="menu container">
 
-      <a href="#"><figure class="brand">
+      <a href="#">
+        <figure class="brand">
           <img class="brand-steticorp " src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
-      </figure></a>
+        </figure>
+      </a>
 
       <nav class="navBar">
         <ul class="navBar-list">

@@ -17,7 +17,7 @@
             </p>
         </div>
 
-        <div class="item active" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/higiene.jpg" ?>');">
+        <div class="item active" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/wellness-massage.jpg" ?>');">
           <div class="carousel-caption">
               <div class="coverDatos u-textWhite">
                   <h1>Tratamientos Corporales</h1>
@@ -25,12 +25,12 @@
               </div>
           </div>
         </div>
-        <div class="item" style="background-image:url('http://placehold.it/1200x315');">
+        <div class="item" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/massage.jpg" ?>');">
           <div class="carousel-caption">
               <h3>Second Carousel</h3>
           </div>
         </div>
-        <div class="item" style="background-image:url('http://placehold.it/1200x315');">
+        <div class="item" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/wellness-skinCare.jpg" ?>');">
           <div class="carousel-caption">
               <h3>Caption Text</h3>
           </div>
