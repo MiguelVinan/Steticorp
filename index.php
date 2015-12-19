@@ -3,7 +3,7 @@
 <?php include(locate_template('layouts/cover-home.php')) ?>
 <?php include(locate_template('layouts/barnner.php')) ?>
 
-<section class="welcome">
+<section class="welcome container">
 
   <div class="welcome-flor">
     <img class="logo" src="<?= get_template_directory_uri() . '/assets/images/florLoto.svg' ?>" alt="" />
