@@ -6,6 +6,5 @@ $(function(){
   $btnMenu.click(function(e){
     e.preventDefault();
     $navBar.toggleClass('is-active');
-  })
-
+  });
 });

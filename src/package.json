@@ -18,5 +18,10 @@
     "gulp-uglify": "^1.4.1",
     "gulp-util": "^3.0.6",
     "vinyl-map": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1"
   }
 }

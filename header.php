@@ -32,15 +32,14 @@
         </figure>
       </a>
 
-      <nav class="navBar">
-        <ul class="navBar-list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">SERVICIOS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">SOBRE NOSOTROS</a></li>
-          <li><a href="#">CONTÁCTANOS</a></li>
-        </ul>
-      </nav>
+      <?php wp_nav_menu(
+        array(
+          'theme_location' => 'nav-header',
+          'menu_class' => 'navBar-list',
+          'container' => 'nav',
+          'container_class' => 'navBar'
+        )
+      ); ?>
 
       <button type="button" name="button" class="btn-menu"><i class="icon-th-menu"></i>
       </button>

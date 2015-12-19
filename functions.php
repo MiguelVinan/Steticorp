@@ -107,7 +107,7 @@ add_filter( 'login_headertitle', 'mi_logo_personalizado_url_titulo' );
      'name'               => __( 'Blog' ),
      'singular_name'      => __( 'Blog' ),
      'add_new_item'       => __( 'Agregar nuevo', 'your-plugin-textdomain' ),
-     'new_item'           => __( 'Nueva Artículo', 'your-plugin-textdomain' ),
+     'new_item'           => __( 'Nuevo Artículo', 'your-plugin-textdomain' ),
      'edit_item'          => __( 'Editar Artículo', 'your-plugin-textdomain' ),
      'view_item'          => __( 'Ver Articulo', 'your-plugin-textdomain' ),
      'all_items'          => __( 'Todos los articulos', 'your-plugin-textdomain' ),
