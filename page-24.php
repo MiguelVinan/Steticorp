@@ -12,8 +12,8 @@
         $url = $thumb['0'];
       ?>
 
-    <article class="article col-xs-12 col-md-4">
-      <time><?= the_date('j \d\e F, Y') ?></time>
+    <article class="article col-xs-12 col-sm-6 col-md-4">
+      <time><?php the_time('j \d\e F, Y') ?></time>
       <a href="<?php the_permalink(); ?>">
         <div class="article-image" style="background-image:url( <?= $url ?> );">
           <h3><?php the_title(); ?></h3>
@@ -21,9 +21,19 @@
       </a>
     </article>
 
-    <?php endwhile; else : ?>
+    <?php endwhile; ?>
+    <div class="pagination-links col-xs-12 text-center">
+      <?php $argsPaginations = array(
+        'prev_text' => 'Articulos nuevos',
+        'next_text' => 'Articulos anteriores'
+      ) ?>
+      <?= paginate_links($argsPaginations) ?>
+    </div>
+    <?php else : ?>
       <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
     <?php endif; ?>
+    <?php wp_reset_query(); ?>
+
 
   </section>
   
