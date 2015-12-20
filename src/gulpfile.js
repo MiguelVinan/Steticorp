@@ -58,7 +58,7 @@ gulp.task('sass:compile', function () {
     .pipe(notify({
       'title':'Sass compile',
       'sound': true,
-      'message': "Yey! Sass compile as: <%= file.relative %>!"
+      'message': "Yey! Sass was compiled as: <%= file.relative %>!"
       }))
 
 });
