@@ -4,7 +4,7 @@
   padding: 1em 0
 
   #searchform
-    +flex(row, start, center)
+    +flex(row, center, center)
     input
       transition: 0.2s ease-in
       border-radius: 50px
@@ -21,6 +21,11 @@
       color: $black
       transform: translateX(-150%)
       transition: 0.2s ease-out
+
++desktop
+  .searchBox
+    #searchform
+      +flex(row, start, center)
 
 .is-readyToSearch
   width: 80%
