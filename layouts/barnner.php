@@ -1,7 +1,7 @@
 <section class="barnner">
   <div class="container">
     <div class="barnnerContainer col-xs-12 col-sm-8 col-md-6">
-      <div class="barnnerCircle">
+      <div class="barnnerCircle col-xs-2 col-sm-3">
           <span>-20%</span>
       </div>
     

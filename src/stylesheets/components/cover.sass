@@ -64,6 +64,38 @@
     color: white
     text-align: center
 
+  &--single
+    height: 500px
+    h1
+      color: white
+    .lotoFlower
+      width: 50px
+      position: absolute
+      bottom: 0
+      left: 0
+      transform: translateY(50%)
+    .author
+      +flex(row, end, center)
+      position: absolute
+      right: 0.5em
+      bottom: 2em
+      &-image
+        overflow: hidden
+        width: 58px
+        height: 58px
+        background-color: $gray
+        border-radius: 50%
+
+      &-info
+        margin-left: 1em
+        h3
+          padding: 0
+          margin: 0
+          font-size: 14px
+        time
+          text-transform: lowercase
+          font-size: 14px
+          color: white !important
 
 
 +tablet
@@ -103,3 +135,6 @@
             p
               width: 500px
               margin: 0 auto
+    &--single
+      .lotoFlower
+        width: 70px

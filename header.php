@@ -15,6 +15,7 @@
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- description -->
+    <meta name="author" content="Miguel Viñan">
   	<?php if (is_single() || is_page() ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   	<meta name="description" content="<?php the_excerpt_rss(); ?>" />
   	<?php endwhile; endif; elseif(is_home()) : ?>
@@ -26,7 +27,7 @@
   <body>
     <header class="menu container">
 
-      <a href="#">
+      <a href="<?php bloginfo('url') ?>">
         <figure class="brand">
           <img class="brand-steticorp " src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
         </figure>
