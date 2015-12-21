@@ -1,0 +1,35 @@
+.searchBox
+  width: 100%
+  background-color: $purpish-brown
+  padding: 1em 0
+
+  #searchform
+    +flex(row, center, center)
+    input
+      transition: 0.2s ease-in
+      border-radius: 50px
+      border: none
+      padding: 0.5em 3em
+      outline: none
+      color: $black
+      left: 0
+      position: relative
+      &[placeholder]
+        font-weight: bold
+    i
+      font-size: 20px
+      color: $black
+      transform: translateX(-150%)
+      transition: 0.2s ease-out
+
++desktop
+  .searchBox
+    #searchform
+      +flex(row, start, center)
+
+.is-readyToSearch
+  width: 80%
+.is-iconReady
+  transform: translateX(0) !important
+  color: white !important
+

@@ -104,8 +104,8 @@ add_filter( 'login_headertitle', 'mi_logo_personalizado_url_titulo' );
  function blog_post_type() {
 
      $labels = array(
-     'name'               => __( 'Blog' ),
-     'singular_name'      => __( 'Blog' ),
+     'name'               => __( 'Artículos' ),
+     'singular_name'      => __( 'Artículo' ),
      'add_new_item'       => __( 'Agregar nuevo', 'your-plugin-textdomain' ),
      'new_item'           => __( 'Nuevo Artículo', 'your-plugin-textdomain' ),
      'edit_item'          => __( 'Editar Artículo', 'your-plugin-textdomain' ),
@@ -125,11 +125,11 @@ add_filter( 'login_headertitle', 'mi_logo_personalizado_url_titulo' );
      'show_in_menu'    => true,
      'menu_position'   => 4,
      'can_export'      => true,
-     'has_archive'     => true,
+     'has_archive'     => false,
      'capability_type'     => 'post'
 
 
    );
 
-   register_post_type('blog', $args );
+   register_post_type('articulos', $args );
  }

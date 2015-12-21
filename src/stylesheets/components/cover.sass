@@ -3,17 +3,30 @@
   height: 100vh
   position: relative
   border-bottom: 7px solid $maize
+  background-position: center center
+  background-color: $reddish-pink
+  background-repeat: no-repeat
+  background-size: cover
+
+  article
+    height: 100%
+    position: relative
+    +flex(column, center,center)
+  
+  .specialTitle
+    text-align: center
+    line-height: 50px
+
   .carousel-indicators
     .active
       background-color: $reddish-pink
       width: 15px
       height: 15px
     li
-      transition: 0.3s ease
+      transition: 0.3s ease-out
       margin-right: 15px
       width: 12px
       height: 12px
-      border: 2px solid white
       &:last-child
         margin-right: 0
   .carousel-inner
@@ -25,15 +38,8 @@
       background-position: center center
       background-size: cover
       background-repeat: no-repeat
-      &::before
-        content: ""
-        position: absolute
-        background-color: $color-hover-cover
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        z-index: 0
+      +before-beige()
+
       .carousel-caption
         bottom: 10%
         top: 30%
@@ -54,6 +60,43 @@
   .coverDatos
     text-align: center
     position: relative
+
+  &-content
+    color: white
+    text-align: center
+
+  &--single
+    height: 500px
+    h1
+      color: white
+    .lotoFlower
+      width: 50px
+      position: absolute
+      bottom: 0
+      left: 0
+      transform: translateY(50%)
+    .author
+      +flex(row, end, center)
+      position: absolute
+      right: 0.5em
+      bottom: 2em
+      &-image
+        overflow: hidden
+        width: 58px
+        height: 58px
+        background-color: $gray
+        border-radius: 50%
+
+      &-info
+        margin-left: 1em
+        h3
+          padding: 0
+          margin: 0
+          font-size: 14px
+        time
+          text-transform: lowercase
+          font-size: 14px
+          color: white !important
 
 
 +tablet
@@ -76,6 +119,15 @@
 
 +desktop
   .cover
+    &-content
+      text-align: left
+    .specialTitle
+      text-align: left
+      line-height: 90px
+    article
+      +flex(column, center, start)
+      img
+        margin-left: 45px 
     .coverLogo
       margin-bottom: 40px
     .carousel-inner
@@ -85,3 +137,6 @@
             p
               width: 500px
               margin: 0 auto
+    &--single
+      .lotoFlower
+        width: 70px
