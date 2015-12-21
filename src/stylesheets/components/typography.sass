@@ -1,0 +1,69 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400,900,700|Alex+Brush);
+
+body
+  font-family: 'Raleway'
+  color: $warm-gray
+  font-size: 14px
+
+h1
+  font-size: 30px
+  font-weight: $bold
++tablet
+  h1
+    font-size: 50px
+h2
+  font-size: 30px
+  font-weight: $bold
+  color: $black
+
++tablet
+  h2
+    font-size: 40px
++desktop
+  h2
+    font-size: 50px
+
+h3
+  font-size: 20px
+  font-weight: $bold
+  text-transform: capitalize
+  padding: 0 1em
+
+h4
+  font-size: 20px
+  font-weight: $bold
+  text-transform: capitalize
+  color: $black
+
+p
+  line-height: 22px
+  font-weight: $regular
+  letter-spacing: 0.6px
+
+a
+  color: white
+  text-transform: uppercase
+  font-weight: $bold
+  transition: 0.3s ease
+  &:active,
+  &:focus
+    color: $reddish-pink
+    text-decoration: none
+
+  &:hover
+    text-decoration: none
+    color: $maize
+time
+  font-weight: $bold
+  font-size: 18px
+  
+.specialTitle
+  color: white
+  font-family: "Alex brush"
+  font-size: 60px
+  line-height: 90px
+  font-weight: lighter
+  text-transform: capitalize
++tablet
+  .specialTitle
+    font-size: 120px

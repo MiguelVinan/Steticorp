@@ -1,0 +1,51 @@
+.pagination-links
+  margin-right: 1em
+  +flex(row, center, center)
+  position: relative
+
+  a
+    color: $black
+    text-transform: capitalize
+    margin: 0 1em
+    i
+      font-size: 40px
+      transition: 0.3s ease-out
+  .page-numbers
+    padding: 0.6em 1em
+    border-radius: 50%
+    visibility: hidden
+    &:hover
+      background-color: $gray
+
+
+  .current
+    color: $reddish-pink !important
+    font-weight: $ultra-bold !important
+    border-radius: 50%
+    background-color: $beige !important
+
+  .next,
+  .prev
+    visibility: visible
+    position: absolute
+    padding: 0
+    color: $black !important
+    +flex(row, center, center)
+
+  .prev
+    left: 0
+    &:hover
+      background-color: transparent
+      i
+        transform: translateX(-30%)
+  .next
+    right: 0
+    &:hover
+      background-color: transparent
+      i
+        transform: translateX(30%)
+
++tablet
+  .pagination-links
+    .page-numbers
+      visibility: visible

@@ -1,0 +1,57 @@
+.barnner
+  background-color: $purpish-brown
+  width: 100%
+  height: 150px
+  +flex(row,center,center)
+
+  .barnnerContainer
+    +flex(row,center,center)
+
+    .barnnerCircle
+      background-color: $reddish-pink
+      width: auto
+      height: auto
+      border-radius: 50%
+      color: white
+      font-size: 30px
+      font-weight: bold
+      line-height: 100px
+      text-align: center
+
+
+    .barnnerText
+      text-align: left
+      font-size: 12px
+      line-height: 20px
+      color: white
+      font-weight: $bold
+      margin: 0 12px 0 18px
+
++tablet
+  .barnner
+    height: 184px
+    .barnnerContainer
+      width: 100%
+
+      .barnnerCircle
+        width: 130px
+        height: 130px
+        font-size: 40px
+        line-height: 130px
+        border-radius: 100px
+        text-align: center
+
+      .barnnerText
+        margin-left: 30px
+        line-height: 35px
+        min-width: 60%
+        font-size: 20px
+        text-align: left
+
++desktop
+  .barnner
+    .barnnerContainer
+      .barnnerCircle
+        font-size: 40px
+      .barnnerText
+        font-size: 25px
