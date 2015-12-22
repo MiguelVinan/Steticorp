@@ -17,3 +17,29 @@
 
   &:active
     transform: translateY(10%)
+
+.btn-contact
+  overflow: hidden
+  padding: 0.8em 2em
+  border-radius: 50px
+  background-color: $maize
+  border: 0
+  +flex(row, center, center)
+  text-transform: capitalize
+  font-weight: $bold
+  outline: none
+  transition: 0.3s ease
+  max-width: 400px
+  width: 175px
+  &:hover
+    background-color: darken($maize, 10%)
+  &:active
+    transform: translateY(10%)
+    i
+      transform: scale(1.4)
+  i
+    transition: 0.1s cubic-bezier(.87,-.41,.19,2)
+    color: $reddish-pink
+    margin-left: 1em
+  span
+    color: $purpish-brown !important
