@@ -128,8 +128,72 @@ add_filter( 'login_headertitle', 'mi_logo_personalizado_url_titulo' );
      'has_archive'     => false,
      'capability_type'     => 'post'
 
-
    );
 
    register_post_type('articulos', $args );
+ }
+ add_action( 'init', 'corporal_post_type', 0 );
+ function corporal_post_type() {
+
+     $labels = array(
+     'name'               => __( 'Tratamientos Corporales' ),
+     'singular_name'      => __( 'T. Corporal' ),
+     'add_new_item'       => __( 'Agregar nuevo', 'your-plugin-textdomain' ),
+     'new_item'           => __( 'Nuevo Corporal', 'your-plugin-textdomain' ),
+     'edit_item'          => __( 'Editar Corporal', 'your-plugin-textdomain' ),
+     'view_item'          => __( 'Ver Corporal', 'your-plugin-textdomain' ),
+     'all_items'          => __( 'Todos los corporales', 'your-plugin-textdomain' ),
+     'search_items'       => __( 'Buscar corporales', 'your-plugin-textdomain' ),
+     'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
+     'not_found'          => __( 'Corporales no encontrados.', 'your-plugin-textdomain' ),
+     'not_found_in_trash' => __( 'Corporales no entontrados en la papelera.', 'your-plugin-textdomain' )
+       );
+
+   $args = array(
+     'labels'          => $labels,
+     'public'          => true,
+     'taxonomies'      => array('category'),
+     'supports'        => array( 'title', 'editor', 'thumbnail','excerpt','author', 'comments' ),
+     'show_in_menu'    => true,
+     'menu_position'   => 4,
+     'can_export'      => true,
+     'has_archive'     => false,
+     'capability_type'     => 'post'
+
+   );
+
+   register_post_type('corporales', $args );
+ }
+
+add_action( 'init', 'skin_post_type', 0 );
+function skin_post_type() {
+
+     $labels = array(
+     'name'               => __( 'Tratamientos Faciales' ),
+     'singular_name'      => __( 'T. Facial' ),
+     'add_new_item'       => __( 'Agregar nuevo', 'your-plugin-textdomain' ),
+     'new_item'           => __( 'Nuevo facial', 'your-plugin-textdomain' ),
+     'edit_item'          => __( 'Editar facial', 'your-plugin-textdomain' ),
+     'view_item'          => __( 'Ver Corporal', 'your-plugin-textdomain' ),
+     'all_items'          => __( 'Todos las faciales', 'your-plugin-textdomain' ),
+     'search_items'       => __( 'Buscar faciales', 'your-plugin-textdomain' ),
+     'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
+     'not_found'          => __( 'Corporales no encontrados.', 'your-plugin-textdomain' ),
+     'not_found_in_trash' => __( 'Corporales no entontrados en la papelera.', 'your-plugin-textdomain' )
+       );
+
+   $args = array(
+     'labels'          => $labels,
+     'public'          => true,
+     'taxonomies'      => array('category'),
+     'supports'        => array( 'title', 'editor', 'thumbnail','excerpt','author', 'comments' ),
+     'show_in_menu'    => true,
+     'menu_position'   => 4,
+     'can_export'      => true,
+     'has_archive'     => false,
+     'capability_type' => 'post'
+
+   );
+
+   register_post_type('faciales', $args );
  }
