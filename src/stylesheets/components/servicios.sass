@@ -1,0 +1,52 @@
+.servicios
+  background-color: $gray
+
+  .serviciosContainer
+
+    .serviciosCorporales
+      margin-bottom: 35px
+
+    .serviciosCorporales,
+    .serviciosFaciales
+      height: 200px
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      color: #ffffff
+      font-weight: $bold
+      font-size: 20px
+      display: flex
+      align-items: flex-end
+      justify-content: center
+
+    .serviciosFaciales
+      margin-bottom: 35px
+
+  .serviciosButton
+    .btnServicios
+      margin: 0 auto
+
++tablet
+  .servicios
+    .serviciosContainer
+      .serviciosCorporales,
+      .serviciosFaciales
+        height: 500px
+      .serviciosCorporales
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%)
+      .serviciosFaciales
+        clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0 100%)
+  .servicosBotton
+    .btnServicios
+
++desktop
+  .servicios
+    .serviciosContainer
+      .serviciosCorporales,
+      .serviciosFaciales
+      .serviciosCorporales
+        justify-content: flex-start
+      .serviciosFaciales
+        justify-content: flex-end
+  .servicosBotton
+    .btnServicios
