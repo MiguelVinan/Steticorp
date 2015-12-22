@@ -27,6 +27,34 @@
     </p>
   </div>
 
+
+</section>
+
+
+
+<section class="servicios u-paddingSection  container-fluid">
+
+  <div class="serviciosContainer row">
+    <div class="">
+      <a href="#" class="serviciosCorporales col-xs-12 col-sm-6" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/practica.jpg" ?>');" >
+        <h3>
+          Tratamientos Corporales
+        </h3>
+      </a>
+
+      <a href="#" class="serviciosFaciales serviciosSegundario col-xs-12 col-sm-6" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/practica1.jpg" ?>');">
+        <h3>
+          Tratamientos Faciales
+        </h3>
+      </a>
+    </div>
+  </div>
+
+  <div class="serviciosButton row">
+    <button type="button" name="button" class="btnServicios"><span>Ver mas de nuestros servicios </span><i class="icon-chevron-right"></i> </button>
+  </div>
+
+
 </section>
 
 
