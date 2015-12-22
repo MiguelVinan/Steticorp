@@ -27,10 +27,7 @@
     </p>
   </div>
 
-
 </section>
-
-
 
 <section class="servicios u-paddingSection  container-fluid">
 
@@ -54,8 +51,6 @@
     <button type="button" name="button" class="btnServicios"><span>Ver mas de nuestros servicios </span><i class="icon-chevron-right"></i> </button>
   </div>
 
-
 </section>
-
 
 <?php get_footer(); ?>
