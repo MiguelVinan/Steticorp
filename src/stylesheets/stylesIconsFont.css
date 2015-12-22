@@ -25,108 +25,126 @@
 }
 
 .icon-bamboo2:before {
-	content: "\e922";
+    content: "\e922";
 }
 .icon-bamboo3:before {
-	content: "\e91f";
+    content: "\e91f";
+}
+.icon-info-large:before {
+    content: "\e926";
 }
 .icon-th-menu:before {
-	content: "\e920";
+    content: "\e920";
+}
+.icon-info3:before {
+    content: "\e925";
 }
 .icon-directions_run:before {
-	content: "\e91c";
+    content: "\e91c";
+}
+.icon-info2:before {
+    content: "\e924";
 }
 .icon-envelope:before {
-	content: "\e914";
+    content: "\e914";
 }
 .icon-mail-read:before {
-	content: "\e915";
+    content: "\e915";
 }
 .icon-menu:before {
-	content: "\e921";
+    content: "\e921";
 }
 .icon-address:before {
-	content: "\e91b";
+    content: "\e91b";
 }
 .icon-chevron-left:before {
-	content: "\e913";
+    content: "\e913";
 }
 .icon-chevron-right:before {
-	content: "\e900";
+    content: "\e900";
 }
 .icon-instagram-with-circle:before {
-	content: "\e901";
+    content: "\e901";
 }
 .icon-twitter-with-circle:before {
-	content: "\e902";
+    content: "\e902";
 }
 .icon-facebook-with-circle:before {
-	content: "\e903";
+    content: "\e903";
 }
 .icon-heart2:before {
-	content: "\e904";
+    content: "\e904";
+}
+.icon-info4:before {
+    content: "\e927";
+}
+.icon-info5:before {
+    content: "\e928";
 }
 .icon-map:before {
-	content: "\e91d";
+    content: "\e91d";
 }
 .icon-direction:before {
-	content: "\e91e";
+    content: "\e91e";
 }
 .icon-heart3:before {
-	content: "\e905";
+    content: "\e905";
 }
 .icon-road:before {
-	content: "\e916";
+    content: "\e916";
 }
 .icon-envelope-o:before {
-	content: "\e917";
+    content: "\e917";
 }
 .icon-paper-plane:before {
-	content: "\e918";
+    content: "\e918";
 }
 .icon-envelope2:before {
-	content: "\e919";
+    content: "\e919";
 }
 .icon-heartbeat:before {
-	content: "\e906";
+    content: "\e906";
 }
 .icon-phone:before {
-	content: "\e907";
+    content: "\e907";
 }
 .icon-envelop:before {
-	content: "\e91a";
+    content: "\e91a";
 }
 .icon-search:before {
-	content: "\e908";
+    content: "\e908";
 }
 .icon-magic-wand:before {
-	content: "\e909";
+    content: "\e909";
 }
 .icon-gift:before {
-	content: "\e90a";
+    content: "\e90a";
 }
 .icon-leaf:before {
-	content: "\e90b";
+    content: "\e90b";
 }
 .icon-earth:before {
-	content: "\e90c";
+    content: "\e90c";
 }
 .icon-star-full:before {
-	content: "\e90d";
+    content: "\e90d";
 }
 .icon-heart:before {
-	content: "\e90e";
+    content: "\e90e";
 }
 .icon-woman:before {
-	content: "\e90f";
+    content: "\e90f";
+}
+.icon-info:before {
+    content: "\e923";
 }
 .icon-cross:before {
-	content: "\e910";
+    content: "\e910";
 }
 .icon-google-plus3:before {
-	content: "\e911";
+    content: "\e911";
 }
 .icon-whatsapp:before {
-	content: "\e912";
+    content: "\e912";
 }
 
