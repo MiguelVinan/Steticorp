@@ -9,13 +9,18 @@
     height: 280px
     border-radius: 3px
     +flex(column, center, center)
-    +before-color($reddish-pink)
+    +before-color($black)
     position: relative
     overflow: hidden
+    transition: 0.3s ease
    
     h3
       z-index: 1
       text-align: center
+
+    &:hover
+      box-shadow: 0px 4px 8px rgba($black, 0.6)
+      transform: translateY(-2%)
 
 +desktop
   .article
