@@ -53,61 +53,59 @@
 
 .recomendServices
   padding-top: 0 
-  .singleService
-    margin-bottom: 15px
-    &:hover
-      .imgService,
-      .infoService
-        box-shadow: 0px 4px 8px rgba($black, 0.6)
-        transform: translateY(-5%)
-      .infoService
-        i
-          transform: scale(1.2)
-
+.singleService
+  margin-bottom: 15px
+  &:hover
     .imgService,
     .infoService
-      transition: 0.3s ease
-
-    .imgService
-      height: 150px
-      background-size: cover
-      background-position: center center
-      background-repeat: no-repeat
-      border-radius: 3px 3px 0 0
+      box-shadow: 0px 4px 8px rgba($black, 0.6)
+      transform: translateY(-5%)
     .infoService
-      position: relative
-      background-color: $gray
-      padding: 1.5em
-      border-radius: 0 0 3px 3px
-      & > p
-        color: $warm-gray
-        display: none
-      h4
-        margin-bottom: 15px
-      p
-        text-transform: initial
       i
-        transition: 0.3s cubic-bezier(.87,-.41,.19,2)
-        font-size: 20px
-        position: absolute
-        color: $reddish-pink
-        right: 5%
-        bottom: 10%
-  .modal
-    &-footer
-      small
-        margin-bottom: 15px
+        transform: scale(1.2)
+
+  .imgService,
+  .infoService
+    transition: 0.3s ease
+
+  .imgService
+    height: 150px
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    border-radius: 3px 3px 0 0
+  .infoService
+    position: relative
+    background-color: $gray
+    padding: 1.5em
+    border-radius: 0 0 3px 3px
+    & > p
+      color: $warm-gray
+      display: none
+    h4
+      margin-bottom: 15px
+    p
+      text-transform: initial
+    i
+      transition: 0.3s cubic-bezier(.87,-.41,.19,2)
+      font-size: 20px
+      position: absolute
+      color: $reddish-pink
+      right: 5%
+      bottom: 10%
+.modal
+  &-footer
+    small
+      margin-bottom: 15px
 +desktop
-  .recomendServices
-    .singleService
-      .imgService
-        height: 200px
-      .infoService
-        & > p
-          display: block
+  .singleService
+    .imgService
+      height: 200px
+    .infoService
+      & > p
+        display: block
 
 +desktop-HD
-  .recomendServices
-    .singleService
-      .infoService
-        height: 250px
+  .singleService
+    .infoService
+      height: 250px
