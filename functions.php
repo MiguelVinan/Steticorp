@@ -197,3 +197,36 @@ function skin_post_type() {
 
    register_post_type('faciales', $args );
  }
+
+add_action( 'init', 'otherTreatment_post_type', 0 );
+function otherTreatment_post_type() {
+
+     $labels = array(
+     'name'               => __( 'Tratamientos Complementarios' ),
+     'singular_name'      => __( 'T. Complementario' ),
+     'add_new_item'       => __( 'Agregar nuevo', 'your-plugin-textdomain' ),
+     'new_item'           => __( 'Nuevo', 'your-plugin-textdomain' ),
+     'edit_item'          => __( 'Editar', 'your-plugin-textdomain' ),
+     'view_item'          => __( 'Ver', 'your-plugin-textdomain' ),
+     'all_items'          => __( 'Todos', 'your-plugin-textdomain' ),
+     'search_items'       => __( 'Buscar', 'your-plugin-textdomain' ),
+     'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
+     'not_found'          => __( 'otros cuidados no encontrados.', 'your-plugin-textdomain' ),
+     'not_found_in_trash' => __( 'otros cuidados no entontrados en la papelera.', 'your-plugin-textdomain' )
+       );
+
+   $args = array(
+     'labels'          => $labels,
+     'public'          => true,
+     'taxonomies'      => array('category'),
+     'supports'        => array( 'title', 'editor', 'thumbnail','excerpt','author', 'comments' ),
+     'show_in_menu'    => true,
+     'menu_position'   => 4,
+     'can_export'      => true,
+     'has_archive'     => false,
+     'capability_type' => 'post'
+
+   );
+
+   register_post_type('otrosCuidados', $args );
+ }
