@@ -1,0 +1,56 @@
+.contactForm
+  margin-top: 120px
+  .wpcf7
+    .wpcf7-validation-errors,
+    .wpcf7-mail-sent-ok
+      color: white !important
+      font-weight: $bold
+      padding: 0.5em 1em !important
+      border-radius: 3px
+    .wpcf7-validation-errors
+      background-color: rgba($maize, 0.7)
+    .wpcf7-mail-sent-ok
+      background-color: rgba($green, 0.7)
+    form
+      position: relative
+    &-not-valid-tip
+      color: $maize
+      font-weight: $bold
+    div[role="alert"]
+      border: 0
+      position: absolute
+      bottom: 0
+      padding-left: 0
+      color: white
+
+    input[type="text"],
+    input[type="email"],
+    textarea
+      padding: 1em 2em
+      border-radius: 3px
+      border: none
+      outline: none
+      width: 100%
+
+    .submitInput
+      +flex(row, end, center)
+
+      input[type="submit"]
+        order: 1
+      img
+        order: 0
+
+    .firstInputs
+      .wpcf7-quiz-label
+        color: white
+
+address
+  p
+    margin-bottom: 0
+
++tablet
+  .contactForm
+    margin-top: 60px
+    .wpcf7
+      .firstInputs
+        padding-left: 0

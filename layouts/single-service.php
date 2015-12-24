@@ -21,22 +21,30 @@
 
         <div class="modal-body">
           <div class="row">
-            <article class="col-xs-12">
-              <h4>¿Qué es?</h4>
-              <p><?php the_field('question_one') ?></p>
-            </article>
-            <article class="col-xs-12">
-              <h4>¿Para qué sirve?</h4>
-              <p><?php the_field('question_two') ?></p>
-            </article>
-            <article class="col-xs-12">
-              <h4>¿Qué resultados y beneficios obtendrás?</h4>
-              <p><?php the_field('question_three') ?></p>
-            </article>
-            <article class="col-xs-12">
-              <h4>¿Cuantas sesiones aproximadamente necesitas para ver resultados?</h4>
-              <p><?php the_field('question_four') ?></p>
-            </article>
+            <?php if (get_field('question_one')): ?>
+              <article class="col-xs-12">
+                <h4>¿Qué es?</h4>
+                <p><?php the_field('question_one') ?></p>
+              </article>              
+            <?php endif ?>
+            <?php if (get_field('question_two')): ?>
+              <article class="col-xs-12">
+                <h4>¿Para qué sirve?</h4>
+                <p><?php the_field('question_two') ?></p>
+              </article>
+            <?php endif ?>
+            <?php if (get_field('question_three')): ?>
+              <article class="col-xs-12">
+                <h4>¿Qué resultados y beneficios obtendrás?</h4>
+                <p><?php the_field('question_three') ?></p>
+              </article>
+            <?php endif ?>
+            <?php if (get_field('question_four')): ?>
+              <article class="col-xs-12">
+                <h4>¿Cuantas sesiones aproximadamente necesitas para ver resultados?</h4>
+                <p><?php the_field('question_four') ?></p>
+              </article>              
+            <?php endif ?>
           </div>
         </div>
 
