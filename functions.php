@@ -17,15 +17,13 @@
     // JS
     wp_enqueue_script('jquery-v1','https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',"", "", true);
     wp_enqueue_script( 'appjs', get_template_directory_uri() . '/assets/js/app.js', array('jquery-v1'),'', true );
+    wp_register_script( 'api-maps','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false','', true );
+    wp_register_script( 'google-maps', get_template_directory_uri() . '/assets/js/map.js', array('jquery-v1'),'', true );
 
-    // if (is_home()) {
-    //   wp_enqueue_script('home_script');
-    // } elseif (is_page(2)){
-    //   wp_register_script( 'api-maps','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false','', true );
-    //   wp_register_script( 'google-maps', get_template_directory_uri() . '/assets/js/map.js', array('jquery-v2'),'', true );
-    //   wp_enqueue_script('api-maps');
-    //   wp_enqueue_script('google-maps');
-    // }
+    if (is_home() || is_page('contacto')) {
+      wp_enqueue_script('api-maps');
+      wp_enqueue_script('google-maps');
+    }
   }
 
   add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
