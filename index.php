@@ -53,4 +53,31 @@
 
 </section>
 
+<section class="blog container">
+
+  <div class="blogData  col-xs-12">
+    <h2>Ultimos articulos de nuestro blog</h2>
+    <p>Todos los beneficios que traen nuestros tratamientos  además de algunos tips que te serán utiles en el momento del cuidado de tu cuerpo y de la piel.</p>
+  </div>
+
+  <div class="blogArticles span12">
+      <div class="blogPrimario ">
+        <?php include(locate_template('layouts/article.php')) ?>
+      </div>
+      <div class="blogSegundario">
+        <?php include(locate_template('layouts/article.php')) ?>
+      </div>
+      <div class="blogTercero">
+
+          <?php include(locate_template('layouts/article.php')) ?>
+      
+      </div>
+  </div>
+
+  <div class="blogbuton col-xs-12">
+      <a href="" class="blogclik">Ve más de nuestros articulos</a>
+  </div>
+
+</section>
+
 <?php get_footer(); ?>
