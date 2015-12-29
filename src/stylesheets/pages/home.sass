@@ -1,0 +1,68 @@
+.blog
+  .blogData
+    text-align: center
+    margin-bottom: 12px
+    h2
+      font-size: 30px
+    p
+      margin-bottom: 40px
+
+  .blogArticles
+    .blogPrimario
+    .blogSegundario
+    .blogTercero
+      .article
+        display: block
+        margin-bottom: 0
+  .blogbuton
+    display: flex
+    justify-content: center
+    margin-top: 40px
+    .btn-contact
+      text-align: center
+      background-color: transparent
+      border: 1px solid $black
+      color: $purpish-brown
+      font-size: 14px
+      width: 253px
+      padding: .7em 1.8em
++tablet
+  .blog
+    font-size: 14px
+    .blogData
+      margin-bottom: 80px
+      h2
+        font-size: 40px
+        margin-bottom: 40px
+      p
+        max-width: 80%
+        margin: 0 auto
+        text-align: center
+  .blogArticles
+    .blogPrimario
+    .blogSegundario
+    .blogTercero
+      display: none
+      .article
+        display: none
+  .blogbuton
+    margin-top: 0px !important
+    .btn-contact
+      margin: 0px
+
+
++desktop
+  .blog
+    .blogData
+      h2
+        font-size: 50px
+      p
+        font-size: 14px
+  .blogArticles
+    .blogTercero
+      display: block
+      .article
+        display: block
+
+  .blogbuton
+    margin: 0px

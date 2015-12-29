@@ -1,0 +1,48 @@
+.clientes
+  .clientesTitulo
+    padding-bottom: 10px
+    h2
+      text-align: center
+
+  .clientesContainer
+    padding-top: 70px
+    .clientesData
+      background-color: $maize
+      p
+        text-align: center
+        padding: 16px
+        font-weight: $bold
+        color: $black
+
+      .clientesContent
+        +flex(row,space-between,flex-end)
+        transform: translateY(-50%)
+        h4
+          +flex(row, center,flex-end)
+          margin-bottom: -3px
+          padding-right: 18px
+
+        .clientesFoto
+          width: 60px
+          height: 60px
+          border-radius: 50px 50px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          margin-left: 18px
+
++tablet
+  .clientes
+    .clientesTitulo
+    .clientesContainer
+      .clientesData
+      p
+        font-size: 12px
+
++desktop
+  .clientes
+    .clientesTitulo
+    .clientesContainer
+      .clientesData
+      p
+        font-size: 14px
