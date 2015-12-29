@@ -53,7 +53,7 @@
 
 </section>
 
-<section class="blog container">
+<section class="blog container u-paddingSection">
 
   <div class="blogData  col-xs-12">
     <h2>Ultimos articulos de nuestro blog</h2>
@@ -68,24 +68,22 @@
         <?php include(locate_template('layouts/article.php')) ?>
       </div>
       <div class="blogTercero">
-
           <?php include(locate_template('layouts/article.php')) ?>
-
       </div>
   </div>
 
   <div class="blogbuton col-xs-12">
-      <a href="" class="blogclik">Ve más de nuestros articulos</a>
+      <a href="" class="btn-contact">Ve más de nuestros articulos</a>
   </div>
 
 </section>
 
 
 
-<section class="cotizador">
-  <div class="cotizadorContainer col-xs-12 ">
+<section class="cotizador u-paddingSection ">
+  <div class="cotizadorContainer row">
 
-    <div class="cotizadorCard">
+    <div class="cotizadorCard col-sm-6 col-md-5">
 
         <div class="circulo" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/circulo.svg" ?>');">
           <div class="cardDos" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/card2.svg" ?>');">
@@ -96,21 +94,40 @@
 
     </div>
 
-    <div class="cotizadorData col-xs-12 ">
+    <div class="cotizadorData col-xs-12 col-sm-6 col-md-5">
       <h2>Cotizador Online</h2>
       <p>
         Hemos visto la necesidad de que nuestros clientes conozcan cuanto se ahorran en nuestros paquetes de acuerdo al objetivo que tienen planteado.
         Por eso les proporcionamos un cotizador que les permitirá tener un aproximado de su ahorro.
       </p>
 
-      <div class="cotizadorBoton col-xs-12">
-        <a href="#" class="cotizadorclik"><span>Cotiza online</span><i class=""></i></a>
+      <div class="col-xs-12 cotizadorBoton">
+        <a href="#" class="btn-contact"><span>Cotiza online</span><i class=""></i></a>
       </div>
 
     </div>
 
 
   </div>
+</section>
+
+
+<section class="clientes container u-paddingSection">
+
+  <div class="clientesTitulo">
+    <h2>Lo que dicen nuestros clientes</h2>
+  </div>
+
+
+  <div class="clientesdiv row">
+
+    <?php include(locate_template('layouts/client.php')) ?>
+    <?php include(locate_template('layouts/client.php')) ?>
+    <?php include(locate_template('layouts/client.php')) ?>
+
+  </div>
+
+
 </section>
 
 
