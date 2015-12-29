@@ -1,0 +1,89 @@
+.cotizador
+  background-color: $gray
+  position: relative
+  .cotizadorContainer
+    margin: 0
+    .cotizadorCard
+      padding-bottom: 80px
+      .circulo
+        height: 190px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        +flex(row, center, center)
+        position: relative
+
+        .cardDos
+          width: 170px
+          height: 130px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          position: relative
+          top: -23px
+          left: -39px
+
+          .cardUno
+            width: 151px
+            height: 95px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            position: relative
+            top: 60px
+            left: 16px
+
+    .cotizadorData
+      text-align: center
+      h2
+        margin-top: 0
+      p
+        padding: 40px 0
+        font-size: 14px
+        line-height: 25px
+        text-align: left
+        color: $warm-gray
+
+    .cotizadorBoton
+      +flex(row, center, center)
+      .btn-contact
+
+
+
++tablet
+  .cotizador
+    .cotizadorContainer
+      +flex(row, space-between)
+      //+flex(flex-direction, justify-content, align-items)
+      .cotizadorCard
+        padding: 0
+        +flex(row, center)
+        order: 2
+        .circulo
+          width: 290px
+          height: 290px
+
+
+          .cardDos
+            width: 270px
+            height: 230px
+
+            .cardUno
+              width: 251px
+              height: 195px
+
+      .cotizadorData
+        order: 1
+
+        h2
+          font-size: 50px
+        p
+
+      .cotizadorBoton
+        +flex(row, flex-end, center)
+
++desktop
+  .cotizador
+    .cotizadorContainer
+      padding: 0
+      +flex(row, space-between)
