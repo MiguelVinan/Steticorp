@@ -70,7 +70,7 @@
       <div class="blogTercero">
 
           <?php include(locate_template('layouts/article.php')) ?>
-      
+
       </div>
   </div>
 
@@ -79,5 +79,41 @@
   </div>
 
 </section>
+
+
+
+<section class="cotizador">
+  <div class="cotizadorContainer col-xs-12 ">
+
+    <div class="cotizadorCard">
+
+        <div class="circulo" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/circulo.svg" ?>');">
+          <div class="cardDos" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/card2.svg" ?>');">
+            <div class="cardUno" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/card1.svg" ?>');">
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="cotizadorData col-xs-12 ">
+      <h2>Cotizador Online</h2>
+      <p>
+        Hemos visto la necesidad de que nuestros clientes conozcan cuanto se ahorran en nuestros paquetes de acuerdo al objetivo que tienen planteado.
+        Por eso les proporcionamos un cotizador que les permitirá tener un aproximado de su ahorro.
+      </p>
+
+      <div class="cotizadorBoton col-xs-12">
+        <a href="#" class="cotizadorclik"><span>Cotiza online</span><i class=""></i></a>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+
+
 
 <?php get_footer(); ?>

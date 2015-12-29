@@ -1,0 +1,82 @@
+.cotizador
+  background-color: $gray
+  position: absolute
+  padding: 80px 0
+  .cotizadorContainer
+    .cotizadorCard
+      padding-bottom: 80px
+      .circulo
+        height: 190px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+
+        .cardDos
+          width: 170px
+          height: 130px
+          background-position: center
+          background-repeat: no-repeat
+          background-size: contain
+          position: relative
+          top: -24px
+          left: -40px
+
+          .cardUno
+            width: 151px
+            height: 95px
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            position: relative
+            top: 57px
+            left: 20px
+
+    .cotizadorData
+      text-align: center
+      h2
+        margin-top: 0
+      p
+        padding: 40px 0
+        font-size: 14px
+        line-height: 25px
+        text-align: left
+        color: $warm-gray
+
++tablet
+  .cotizador
+    .cotizadorContainer
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      .cotizadorCard
+        order: 2
+        max-width: 70%
+        margin: 0 auto
+        .circulo
+          width: 290px
+          height: 290px
+
+
+          .cardDos
+            width: 270px
+            height: 230px
+
+            .cardUno
+              width: 251px
+              height: 195px
+
+      .cotizadorData
+        order: 1
+        max-width: 50%
+        margin: 0 auto
+        h2
+          font-size: 50px
+        p
+
+      .cotizadorBoton
+        text-align: right
