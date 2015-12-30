@@ -18,7 +18,7 @@
   &:active
     transform: translateY(10%)
 
-.btnServicios
+.btn-more
   outline: none
   border-radius: 50px
   background-color: transparent
@@ -27,8 +27,10 @@
   font-weight: $bold
   color: $purpish-brown
   border: 2px solid $purpish-brown
-  padding: 1em 2em
+  padding: .8em .8em
   +flex(row, center, center)
+  text-transform: inherit
+  max-width: 253px
 
   &:active
     transform: translateY(10%)
@@ -73,27 +75,3 @@ input[type="submit"]
   outline: none
   color: white
   transition: 0.3s ease
-
-.blogbuton, .cotizadorBoton
-  margin-top: 40px
-  text-align: center
-  height: 34px
-
-  .blogclik, .cotizadorclik
-    font-size: 14px
-    background-color: transparent
-    padding: 1em 2em
-    border-radius: 41px
-    border: 1px solid #20130e
-    color: $purpish-brown
-    &:hover
-      background-color: $maize
-
-.cotizadorBoton
-  margin: 0
-
-  .cotizadorclik
-    color: $purpish-brown
-    background-color: $maize
-    border: none
-    margin: 1em 2em
