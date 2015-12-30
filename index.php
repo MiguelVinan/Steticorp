@@ -103,5 +103,13 @@
 
 
 
+<section class="google-maps">
+    <?php include(locate_template('layouts/google-maps.php')) ?>
+</section>
+
+
+
+
+
 
 <?php get_footer(); ?>
