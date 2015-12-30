@@ -44,17 +44,22 @@
         text-align: left
         color: $warm-gray
 
+
     .cotizadorBoton
       +flex(row, center, center)
-      .btn-contact
+      margin: 0
 
-
+      .cotizadorclik
+        color: $purpish-brown
+        background-color: $maize
+        border: none
+        margin: 1em 2em
+        font-size: 14px
 
 +tablet
   .cotizador
     .cotizadorContainer
       +flex(row, space-between)
-      //+flex(flex-direction, justify-content, align-items)
       .cotizadorCard
         padding: 0
         +flex(row, center)
