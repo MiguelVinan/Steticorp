@@ -3,6 +3,8 @@
 <?php include(locate_template('layouts/cover-home.php')) ?>
 <?php include(locate_template('layouts/barnner.php')) ?>
 
+
+
 <section class="welcome container">
   <div class="welcome-flor">
     <img class="logo" src="<?= get_template_directory_uri() . '/assets/images/florLoto.svg' ?>" alt="" />
@@ -103,12 +105,9 @@
 
 
 
-<section class="google-maps">
-    <?php include(locate_template('layouts/google-maps.php')) ?>
-</section>
 
 
-
+<?php include(locate_template('layouts/suscripcion.php')) ?>
 
 
 
