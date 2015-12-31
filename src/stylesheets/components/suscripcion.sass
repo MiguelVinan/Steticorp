@@ -1,0 +1,82 @@
+.suscripcion
+  background-color: $black
+  .suscripcionContainer
+    .suscripcionData
+      padding-bottom: 40px
+      text-align: center
+      line-height: 22px
+      h3
+        padding: 0
+        color: #ffffff
+      p
+        font-size: 14px
+        color: #c2c2c4
+
+    .suscripcionBtn
+      .suscripcionFormulario
+        .suscripcionOrdenada
+          font-weight: $bold
+          color: $reddish-pink
+          padding: 0px
+          +flex(column, center, center)
+          li
+            padding: 10px 0
+            list-style-position: inside
+            .btn-secondary
+              display: inline
+              padding: 15px 60px
+
+
+    .suscripcionImagen
+      .suscripcionLinia
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+
+
+
++tablet
+  .suscripcion
+    .suscripcionContainer
+      .suscripcionData
+        h3
+          font-size: 16px
+        p
+          font-size: 12px
+      .suscripcionBtn
+        .suscripcionFormulario
+          .suscripcionOrdenada
+            font-size: 18px
+            li
+              margin: 10px 0
+              .input-suscripcion
+                padding: 10px 10px
+              .btn-secondary
+                padding: 9px 40.5px
+
+
+
++desktop
+  .suscripcion
+    .suscripcionContainer
+      .suscripcionData
+        h3
+          font-size: 19px
+        p
+          font-size: 13px
+      .suscripcionBtn
+        .suscripcionFormulario
+          .suscripcionOrdenada
+            +flex(row, center, center)
+            font-size: 11px
+            li
+              padding: 0 7.5px
+              .input-suscripcion
+                padding: 10px 20px
+              .btn-secondary
+                padding: 15px 30px
+      .suscripcionImagen
+        .suscripcionLinia
+          height: 56px
+          padding-right: 45px
+          
