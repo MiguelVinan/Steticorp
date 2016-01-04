@@ -2,14 +2,14 @@
   <section class="footerSection u-paddingSection container ">
     <div class="footerContainer col-sm-12 col-sm-12 row">
 
-      <div class="footerData text-center col-xs-12 col-sm-12">
+      <div class="footerData text-center col-xs-12 col-sm-12 col-md-10">
         <figure class="footerData-logo">
           <img class="" src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
         </figure>
         <p class="">
           Nuestro deber es ayudar a quienes quieren mejorar su imagen personal para que puedan moldear su figura y así nuestro cliente se sienta más seguro de sí mismo, lo que nos diferencia es que lo hacemos con tratamientos no invasivos y eficaces. Hacemos esto mediante masajes corporales, tratamientos faciales y el uso de dispositivos modernos.
           Si quieres mejorar tu imagen física y personal! Sólo tienes que comunicarte con
-          nosotros! Y te daremos una consulta <br> <span>totalmente gratuita.</span>
+          nosotros! Y te daremos una consulta <span>totalmente gratuita.</span>
         </p>
       </div>
 

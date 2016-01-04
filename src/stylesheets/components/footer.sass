@@ -2,6 +2,8 @@
   background-color: $purpish-brown
   .footerSection
     padding-bottom: 0
+    .footerContainer
+      +flex(column, center,center)
     .footerData
       .footerData-logo
       p
@@ -47,8 +49,6 @@
 +tablet
   .footer
     .footerSection
-      .footerData
-        .footerData-logo
       .footerBoton
         +flex(row, center)
         margin-bottom: 30px
@@ -56,7 +56,6 @@
           margin-right: 7.5px
         .btn-more
           margin: 0 0 0 7.5px
-
       .footerLinea
         +flex(row, center)
         hr
@@ -69,10 +68,6 @@
 +desktop
   .footer
     .footerSection
-      .footerData
-        .footerData-logo
-        p
-          font-size: 17px
       .footerBoton
         margin-bottom: 40px
         .btn-contact
