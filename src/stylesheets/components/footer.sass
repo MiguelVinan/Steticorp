@@ -1,0 +1,89 @@
+.footer
+  background-color: $purpish-brown
+  .footerSection
+    padding-bottom: 0
+    .footerData
+      .footerData-logo
+      p
+        padding: 25px 0
+        color: #ffffff
+        span
+          color: $reddish-pink
+    .footerBoton
+      +flex(column, center, center)
+      .btn-contact
+      .btn-more
+        border: 1px solid #ffffff
+        color: #ffffff
+        max-width: 400px
+        width: 175px
+        margin: 15px 0
+    .footerLinea
+      color: #979797
+      hr
+        margin: 0
+        width: 100%
+    .footerSocilaes
+      +flex(row, space-around)
+      margin: 40px 0
+      .footerInst, .footerTwi, .footerFace, .footerWhat
+      a
+        font-size: 52px
+  .autor
+    background-color: $purpish-brown
+    text-align: center
+    +before-color(rgba(52, 52, 52, 0.4))
+    p
+      font-size: 12px
+      margin: 0
+      padding: 13px 0
+      color: #ffffff
+      line-height: 15px
+      a
+        position: relative
+        color: rgb(105, 175, 244)
+        text-transform: lowercase
+
++tablet
+  .footer
+    .footerSection
+      .footerData
+        .footerData-logo
+      .footerBoton
+        +flex(row, center)
+        margin-bottom: 30px
+        .btn-contact
+          margin-right: 7.5px
+        .btn-more
+          margin: 0 0 0 7.5px
+
+      .footerLinea
+        +flex(row, center)
+        hr
+          width: 50%
+      .footerSocilaes
+        +flex(row, center)
+        .footerInst, .footerTwi, .footerFace, .footerWhat
+          margin: 0 20px
+
++desktop
+  .footer
+    .footerSection
+      .footerData
+        .footerData-logo
+        p
+          font-size: 17px
+      .footerBoton
+        margin-bottom: 40px
+        .btn-contact
+        .btn-more
+          margin: 0 7.5px
+      .footerLinea
+        hr
+          width: 30%
+      .footerSocilaes
+        .footerInst, .footerTwi, .footerFace, .footerWhat
+          margin: 0 19px
+    .autor
+      p
+        +flex(row, space-around)
