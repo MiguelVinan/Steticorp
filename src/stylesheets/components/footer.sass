@@ -28,9 +28,12 @@
     .footerSociales
       +flex(row, space-around)
       margin: 40px 0
-      .footerInst, .footerTwi, .footerFace, .footerWhat
-      a
-        font-size: 52px
+      .footerInst
+        a
+          font-size: 52px
+          color: white
+          &:hover
+            color: $maize
   .autor
     background-color: $purpish-brown
     text-align: center
@@ -62,7 +65,7 @@
           width: 50%
       .footerSociales
         +flex(row, center)
-        .footerInst, .footerTwi, .footerFace, .footerWhat
+        .footerInst
           margin: 0 20px
 
 +desktop
@@ -77,7 +80,7 @@
         hr
           width: 30%
       .footerSociales
-        .footerInst, .footerTwi, .footerFace, .footerWhat
+        .footerInst
           margin: 0 19px
     .autor
       p

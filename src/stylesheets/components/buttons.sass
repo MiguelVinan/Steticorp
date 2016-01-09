@@ -32,10 +32,17 @@
   text-transform: inherit
   max-width: 253px
 
+  &:hover
+    background-color: rgba($maize, 0.3)
+    color: $black
+    i
+      transform: translateX(25%)
+
   &:active
     transform: translateY(10%)
   i
     font-size: 24px
+    transition: 0.3s ease
 
 .btn-contact
   overflow: hidden
@@ -52,12 +59,15 @@
   width: 175px
   &:hover
     background-color: darken($maize, 10%)
+    & i
+      transform: scale(1.4)
+
   &:active
     transform: translateY(10%)
     i
       transform: scale(1.4)
   i
-    transition: 0.1s cubic-bezier(.87,-.41,.19,2)
+    transition: 0.4s cubic-bezier(.87,-.41,.19,2)
     color: $reddish-pink
     margin-left: 1em
   span

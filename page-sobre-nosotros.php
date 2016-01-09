@@ -4,35 +4,35 @@
     <article class="container">
 
       <section class="aboutUs-section row">
-        <div class="image col-xs-12" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/spa-rocks.jpg"?>');">
+        <div class="image col-xs-12" style="background-image:url('<?= the_field('first_image') ?>');">
         </div>
         <article class="infoBox infoBox--right col-xs-12 col-sm-6 col-md-5">
-          <h4>inicio</h4>
-          <p>StetiCorp se fundó en el 2006 por Silvania Hidalgo Balcazar. Desde que eramos tan solo un pequeño centro cosmetológico nos hemos mantenido con la ideología de ofrecer siempre el mejor servicio a nuestros clientes, mostrandoles nuestra calidad y nuestro profesionalismo a cada uno. Haciendo que se sientan satisfechos con los resultados dandoles resultados increibles y gracias a su satisfación de nuestros tratamientos hemos llegamos  a ser la empresa que somos el día de hoy.</p>
+          <h4><?php the_field('title_inicio') ?></h4>
+          <p><?php the_field('description_inicio') ?></p>
         </article>
       </section>
       <section class="aboutUs-section row">
-        <div class="image col-xs-12" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/spa-rocks.jpg"?>');">
+        <div class="image col-xs-12" style="background-image:url('<?= the_field('second_image') ?>');">
         </div>
         <article class="infoBox infoBox--left col-xs-12 col-sm-6 col-md-5">
-          <h4>Nuestros Clientes son imporantes</h4>
-          <p>Nuestro objetivo principal  en todo momento es mantener feliz a nuestros clientes, cada día tratamos de mejorar en nuestros servicios y nuestra atención para que tengan la mejor experiencia desde el primer momento que entran en nuestras instalaciones.</p>
+          <h4><?php the_field('title_second_section') ?></h4>
+          <p><?php the_field('description_second_section') ?></p>
         </article>
       </section>
       <section class="aboutUs-section row">
-        <div class="image col-xs-12" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/spa-rocks.jpg"?>');">
+        <div class="image col-xs-12" style="background-image:url('<?= the_field('third_image') ?>');">
         </div>
         <article class="infoBox infoBox--right col-xs-12 col-sm-6 col-md-5">
-          <h4>Nuestro Equipo</h4>
-          <p>Nuestro objetivo principal  en todo momento es mantener feliz a nuestros clientes, cada día tratamos de mejorar en nuestros servicios y nuestra atención para que tengan la mejor experiencia desde el primer momento que entran en nuestras instalaciones. </p>
+          <h4>N<?php the_field('title_third_section') ?></h4>
+          <p><?php the_field('description_third_section') ?></p>
         </article>
       </section>
       <section class="aboutUs-section row">
-        <div class="image col-xs-12" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/spa-rocks.jpg"?>');">
+        <div class="image col-xs-12" style="background-image:url('<?= the_field('quarter_image') ?>');">
         </div>
         <article class="infoBox infoBox--left col-xs-12 col-sm-6 col-md-5">
-          <h4>Nuestros Servicios</h4>
-          <p>StetiCorp se fundó en el 2006 por Silvania Hidalgo Balcazar. Desde que eramos tan solo un pequeño centro cosmetológico nos hemos mantenido con la ideología de ofrecer siempre el mejor servicio a nuestros clientes, mostrandoles nuestra calidad y nuestro profesionalismo a cada uno. Haciendo que se sientan satisfechos con los resultados dandoles resultados increibles y gracias a su satisfación de nuestros tratamientos hemos llegamos  a ser la empresa que somos el día de hoy.</p>
+          <h4><?php the_field('title_quarter_section') ?></h4>
+          <p><?php the_field('description_quarter_section') ?></p>
         </article>
       </section>
 

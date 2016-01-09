@@ -9,9 +9,9 @@
         <figure class="footerData-logo">
           <img class="" src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
         </figure>
-        <p class="">
+        <div class="">
           <?php the_field('elevator_pitch') ?>
-        </p>
+        </div>
       </div>
       <div class="footerBoton col-xs-12 col-sm-12">
         <a href="<?= get_page_link(4) ?>" class="btn-contact"><span>Contáctanos</span><i class="icon-heart"></i></a>

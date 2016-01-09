@@ -228,3 +228,12 @@ function otherTreatment_post_type() {
 
    register_post_type('otrosCuidados', $args );
  }
+
+  function searchfilter($query) {
+    if ($query->is_search && !is_admin() ) {
+      $query->set('post_type',array('articulos'));
+    }
+    return $query;
+  }
+
+ add_filter('pre_get_posts','searchfilter');
