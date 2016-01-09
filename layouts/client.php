@@ -1,12 +1,10 @@
 <div class="clientesContainer col-xs-12 col-sm-4">
   <div class="clientesData ">
     <div class="clientesContent">
-      <div class="clientesFoto" style="background-image:url('<?= get_template_directory_uri() . "/assets/images/pefil.png" ?>');">
+      <div class="clientesFoto" style="background-image:url('<?= the_sub_field('client_imagen') ?>');">
       </div>
-      <h4>@RositaNas</h4>
+      <h4><?php the_sub_field('client_nickname') ?></h4>
     </div>
-    <p class="">
-      “llegue a tener resultados en el 3 mes garantizado, pero la atención excelente gran amabilidad y excelente calidad de profesionalismo”
-    </p>
+    <p class=""><?php the_sub_field('client_testimonial') ?></p>
   </div>
 </div>

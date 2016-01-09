@@ -20,7 +20,7 @@
     wp_register_script( 'api-maps','https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false','', true );
     wp_register_script( 'google-maps', get_template_directory_uri() . '/assets/js/map.js', array('jquery-v1'),'', true );
 
-    if (is_home() || is_page('contacto')) {
+    if (is_page('home') || is_page('contacto')) {
       wp_enqueue_script('api-maps');
       wp_enqueue_script('google-maps');
     }

@@ -14,10 +14,33 @@
       color: #ffffff
       font-weight: $bold
       font-size: 20px
-      //+flex(row, center, flex-end)
-      display: flex
-      align-items: flex-end
-      justify-content: center
+      +flex(row, center, center)
+      &::before
+        opacity: 0
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        background-color: $maize
+        width: 100%
+        height: 100%
+
+      & h3
+        transition: 0.3s ease
+
+      &:hover
+        text-shadow: 0px 4px 8px rgba($black, 0.6)
+        transform: translateY(-2%)
+        &::before
+          opacity: 0.5
+        & h3
+          transform: translate(-50%, -50%)
+
+    .serviciosCorporales
+      &:hover
+        & h3
+          transform: translate(50%, -50%)
+
 
     .serviciosFaciales
       margin-bottom: 35px

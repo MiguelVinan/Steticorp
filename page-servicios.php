@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
 <?php include(locate_template('layouts/cover.php')) ?>
+<?php include(locate_template('layouts/barnner.php')) ?>
 <section class="allServices u-paddingSection container-fluid">
   <div class="row">
-    <?php 
+    <?php
     /*
      *   Tratamientos Corporales
      */
@@ -23,10 +24,10 @@
     <?php endwhile; else : ?>
       <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
     <?php endif; ?>
-    
-    <?php 
+
+    <?php
     /*
-     *   Tratamientos Faciales 
+     *   Tratamientos Faciales
      */
     ?>
 
@@ -46,7 +47,7 @@
       <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
     <?php endif; ?>
 
-    <?php 
+    <?php
     /*
      *   Otros Cuidados
      */
@@ -58,10 +59,10 @@
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post -> ID ), 'large' );
         $url = $thumb['0'];
       ?>
-    <a href="<?php the_permalink(); ?>">      
+    <a href="<?php the_permalink(); ?>">
       <article class="servicesAdded col-xs-12 col-sm-4" style="background-image:url('<?= $url ?>');">
         <h3 class="text-center"><?php the_title(); ?></h3>
-      </article>    
+      </article>
     </a>
     <?php endwhile; else : ?>
       <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>

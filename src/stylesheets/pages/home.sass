@@ -8,12 +8,9 @@
       margin-bottom: 40px
 
   .blogArticles
-    .blogPrimario
-    .blogSegundario
-    .blogTercero
-      .article
-        display: block
-        margin-bottom: 0
+    .article
+      display: block
+      margin-bottom: 30px
   .blogbuton
     display: flex
     justify-content: center
@@ -44,15 +41,13 @@
         max-width: 80%
         margin: 0 auto
         text-align: center
-  .blogArticles
-    .blogPrimario
-    .blogSegundario
-    .blogTercero
-      display: none
-      .article
+
+    .blogArticles
+      .article:last-child
         display: none
-  .btnBlog
-    margin-top: 0px !important
+
+    .btnBlog
+      margin-top: 0px !important
 
 +desktop
   .blog
@@ -61,11 +56,12 @@
         font-size: 50px
       p
         font-size: 14px
-  .blogArticles
-    .blogTercero
-      display: block
+
+    .blogArticles
       .article
+        margin-bottom: 80px
+      .article:last-child
         display: block
 
-  .blogbuton
-    margin: 0px
+    .blogbuton
+      margin: 0px
