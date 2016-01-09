@@ -3,7 +3,7 @@
  * Banner de Ofertas
  */ ?>
 <?php rewind_posts(); ?>
-<?php query_posts('post=149') ?>
+<?php query_posts('p=146') ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="barnner">
   <div class="container">
