@@ -11,8 +11,7 @@
       <figure class="author-image">
         <img src="<?= the_author_image_url($author_id = null); ?>" alt="" />
       </figure>
-      <div class="author-info">      
-        //pendiente <<<<<<<-----
+      <div class="author-info">
         <h3><?php the_author_posts_link(); ?></h3>
         <time><?php the_time('j \d\e F, Y'); ?></time>
       </div>

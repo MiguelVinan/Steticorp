@@ -1,5 +1,7 @@
 <?php include(locate_template('layouts/subscripcion.php')) ?>
 
+<?php query_posts('p=161') ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <footer class="footer">
   <section class="footerSection u-paddingSection container ">
     <div class="footerContainer col-sm-12 col-sm-12 row">
@@ -8,9 +10,7 @@
           <img class="" src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
         </figure>
         <p class="">
-          Nuestro deber es ayudar a quienes quieren mejorar su imagen personal para que puedan moldear su figura y así nuestro cliente se sienta más seguro de sí mismo, lo que nos diferencia es que lo hacemos con tratamientos no invasivos y eficaces. Hacemos esto mediante masajes corporales, tratamientos faciales y el uso de dispositivos modernos.
-          Si quieres mejorar tu imagen física y personal! Sólo tienes que comunicarte con
-          nosotros! Y te daremos una consulta <span>totalmente gratuita.</span>
+          <?php the_field('elevator_pitch') ?>
         </p>
       </div>
       <div class="footerBoton col-xs-12 col-sm-12">
@@ -28,7 +28,11 @@
       <span>developed & designed by <a href="http://miguelvinan.com/" target="_blank">miguelvinan.com</a></span>
     </p>
   </div>
+<?php endwhile; else : ?>
+  <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
+<?php endif; ?>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>
