@@ -1,3 +1,5 @@
+<?php include(locate_template('layouts/subscripcion.php')) ?>
+
 <footer class="footer">
   <section class="footerSection u-paddingSection container ">
     <div class="footerContainer col-sm-12 col-sm-12 row">
@@ -12,8 +14,8 @@
         </p>
       </div>
       <div class="footerBoton col-xs-12 col-sm-12">
-        <a href="#" class="btn-contact"><span>Contáctanos</span><i class="icon-heart"></i></a>
-        <a href="#" class="btn-more"><span>quienes somos?</span></a>
+        <a href="<?= get_page_link(4) ?>" class="btn-contact"><span>Contáctanos</span><i class="icon-heart"></i></a>
+        <a href="<?= get_page_link(43) ?>" class="btn-more"><span>quienes somos?</span></a>
       </div>
       <div class="footerLinea col-xs-12 col-sm-12">
         <hr>

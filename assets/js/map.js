@@ -57,7 +57,7 @@ function new_map( $el ) {
       stylers:
       [
           { visibility: "on" },
-          {color: '#FFFFFF'}
+          {color: '#000000'}
       ]
     },
     {
@@ -65,7 +65,7 @@ function new_map( $el ) {
       elementType: "labels.text.stroke",
       stylers:
       [
-          { visibility: "on" },
+          { visibility: "off" },
           {color: '#000000'}
       ]
     },
@@ -226,7 +226,7 @@ function center_map( map ) {
   {
     // set center of map
       map.setCenter( bounds.getCenter() );
-      map.setZoom( 16 );
+      map.setZoom( 17 );
   }
   else
   {
