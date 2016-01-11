@@ -9,36 +9,48 @@
       color: white
       font-size: 20px
 
-.authorBibliografia
-  .authorData
-    padding-bottom: 15px
-    +flex(row, center)
-    .authorFoto
-      background-position: -251px -52px
-      background-repeat: no-repeat
-      background-size: auto
-      background-attachment: local
-      transform: scaleX(-1)
-      height: 550px
-      margin-bottom: 55px
-  .authorParrafo
-    .authorDerecha
-      p
-        color: $warm-gray
-        font-size: 14px
-        line-height: 25px
-    .authorBtn
-      +flex(row, center)
-      .authorClik
-        .btn-more
-          padding: 0.8em 2em
-.authorVisita
-  padding-top: 0
-  .authorTitle
-  h2
-    font-size: 35px
-    font-family: 'authenticHilton'
-    font-weight: normal
+.author
+  .authorContainer
+    +flex(column, end, end)
+    .authorInfo
+      .authorData
+        transform: translateY(130px)
+        padding-bottom: 15px
+        z-index: 10
+        margin-top: -130px
+        .authorFoto
+          background-position: top
+          background-repeat: no-repeat
+          background-size: auto
+          background-attachment: local
+          transform: scaleX(-1)
+          height: 550px
+
+      .authorParrafo
+        background-color: $gray
+        .authorBibliografia
+          margin-top: 150px
+          p
+            color: $warm-gray
+            font-size: 14px
+            line-height: 25px
+
+      .authorBtn
+        padding-bottom: 65px
+        margin-top: 15px
+        +flex(row, center)
+        .authorClik
+          .btn-more
+            padding: 0.8em 2em
+
+    .authorVisita
+      text-align: center
+      .authorDireccion
+      .authorTitle
+      h2
+        font-size: 35px
+        font-family: 'authenticHilton'
+        font-weight: normal
 
 +tablet
   .authorSingle
@@ -50,90 +62,92 @@
         font-size: 111px
       .specialsubtitle
         font-size: 25px
-  .authorBibliografia
-    position: relative
-    .authorData
-      +flex(row, flex-start)
-      .authorFoto
-        background-color: $maize
-        background-position: -70px -73px
-        background-repeat: no-repeat
-        background-size: 925px
-        height: 500px
-    .authorParrafo
-      background-color: $gray
-      position: absolute
-      right: 0
-      bottom: -11px
-      .authorDerecha
-        p
-          padding: 33px 10px 0 26px
-      .authorBtn
-        margin: 22px 0
-        +flex(row, flex-end)
-        .authorClik
-          .btn-more
-  .authorVisita
-    margin-top: 3em
-    .authorTitle
-    h2
-      font-size: 44px
+
+  .author
+    .authorContainer
+      z-index: 0
+      .authorInfo
+        .authorData
+          .authorFoto
+            background-color: $maize
+            background-position: center top
+            background-repeat: no-repeat
+            background-size: auto
+            height: 500px
+
+        .authorParrafo
+          z-index: 12
+          background-color: $gray
+          .authorParrafo-Container
+            .authorBibliografia
+              margin-top: 0
+              p
+                padding: 33px 10px 0 26px
+
+            .authorBtn
+              padding: 0px
+              margin: 22px 0
+              +flex(row, flex-end)
+              .authorClik
+                .btn-more
+
+      .authorVisita
+        +flex(row, end, end)
+        .authorDireccion
+          width: 150px
+          img
+            width: 100%
+
 
 +desktop
   .authorSingle
     height: 100vh
     .authorContainer
       img
-        transform: translate(320%) translateY(140%)
+        transform: translate(320%, 140%)
       .specialTitle
         font-size: 120px
       .specialsubtitle
         margin: 30px 0
         text-align: left
         font-size: 25px
-      .authorParrafo
       .authorSociales
         width: 100%
         margin-bottom: -70px
         .footerSociales
-          +flex(row, flex-end, center)
+          +flex(row, end, center)
           margin: 40px 0
           .footerFace, .footerWhat
             margin: 0 20px
             a
               font-size: 50px
-
-  .authorBibliografia
-    .authorData
-      +flex(column, flex-start)
-      .authorFoto
-        background-color: $maize
-        background-position: top center
-        background-repeat: no-repeat
-        background-size: cover
-        height: 500px
-        border-bottom: 31px solid $maize
-    .authorParrafo
-      background-color: $gray
-      transform: translateY(50%)
-      .authorDerecha
-        p
-          padding: 35px 50px 0 80px
-
-  .authorVisita
-    margin-top: 25em
-    position: relative
-    .authorDireccion
-      position: absolute
-      right: 53px
-      bottom: 110px
-      background-position: center
-      background-repeat: no-repeat
-      background-size: contain
-      width: 207px
-      height: 125px
-    .authorTitle
-      text-align: right
-      h2
-        margin-right: 210px
-        font-size: 60px
+  .author
+    .authorContainer
+      .authorInfo
+        .authorData
+          .authorFoto
+            background-color: $maize
+            background-position: top center
+            background-repeat: no-repeat
+            background-size: cover
+            height: 500px
+            border-bottom: 31px solid $maize
+            margin-bottom: 0
+        .authorParrafo
+          background-color: $gray
+          .authorDerecha
+            p
+              padding: 35px 50px 0 80px
+      .authorVisita
+        +flex(row, end, end)
++desktop-HD
+  .authorFinal
+    .authorVisita
+      max-width: 500%
+      position: relative
+      .authorDireccion
+        transform: translate(-40px, -10px)
+      .authorTitle
+        h2
+          font-size: 60px
+          transform: translate(-120px, -210px)
