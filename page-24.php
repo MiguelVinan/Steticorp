@@ -2,7 +2,7 @@
 
   <?php include(locate_template('layouts/cover.php')) ?>
   <?php include(locate_template('layouts/search-box.php')) ?>
-  <section class="container u-paddingSection" style="height:800px;">
+  <section class="container u-paddingSection">
     <section class="row">
       <?php rewind_posts(); ?>
       <?php query_posts(array ('paged' => $paged,'posts_per_page' => 9, 'post_type'=> 'articulos' )) ?>

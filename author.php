@@ -16,8 +16,6 @@
     <div class="authorParrafo col-xs-12 col-sm-9 col-md-9">
       <div class="authorDerecha">
         <p><?= $curauth->description; ?></p>
-        <p class="hidden-xs hidden-sm">
-        </p>
       </div>
       <div class="authorBtn col-xs-12 col-sm-12">
         <div class="authorClik">
