@@ -25,7 +25,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <?php if (is_search()): ?>
+    <?php if (is_search() || is_404()): ?>
       <header class="menu container searchpage">
     <?php else : ?>
       <header class="menu container">

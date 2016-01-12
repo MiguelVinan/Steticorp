@@ -1,5 +1,5 @@
 <?php include(locate_template('layouts/subscripcion.php')) ?>
-
+<?php if (!is_404()) : ?>
 <?php query_posts('p=161') ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <footer class="footer">
@@ -32,7 +32,7 @@
   <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
 <?php endif; ?>
 </footer>
-
+<?php endif; ?>
 <?php wp_footer(); ?>
 </body>
 </html>
