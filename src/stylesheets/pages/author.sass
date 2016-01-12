@@ -11,34 +11,41 @@
 
 .authorBibliografia
   .authorData
-    padding-bottom: 15px
-    +flex(row, center)
-    .authorFoto
-      background-position: -251px -52px
-      background-repeat: no-repeat
-      background-size: auto
-      background-attachment: local
-      transform: scaleX(-1)
-      height: 550px
-      margin-bottom: 55px
-  .authorParrafo
-    .authorDerecha
-      p
-        color: $warm-gray
-        font-size: 14px
-        line-height: 25px
-    .authorBtn
-      +flex(row, center)
-      .authorClik
-        .btn-more
-          padding: 0.8em 2em
-.authorVisita
-  padding-top: 0
-  .authorTitle
-  h2
-    font-size: 35px
-    font-family: 'authenticHilton'
-    font-weight: normal
+    .authorInfo
+      .authorFoto
+        margin-bottom: -122px
+        z-index: 1
+        .authorSilvana
+          background-color: $maize
+          background-position: top
+          background-repeat: no-repeat
+          background-size: auto
+          transform: scaleX(-1)
+          background-attachment: local
+          height: 550px
+          margin-bottom: 55px
+      .authorParrafo
+        background-color: $gray
+        .authorDerecha
+          margin-top: 150px
+          p
+            line-height: 25px
+        .authorBtn
+          margin-top: 15px
+          margin-bottom: 60px
+          +flex(row, center, center)
+          .authorClik
+            .btn-more
+              padding: 0.8em 2em
+    .authorVisita
+      text-align: center
+      padding-top: 0
+      .authorDireccion
+      .authorTitle
+        h2
+          font-size: 35px
+          font-family: 'authenticHilton'
+          font-weight: normal
 
 +tablet
   .authorSingle
@@ -50,34 +57,43 @@
         font-size: 111px
       .specialsubtitle
         font-size: 25px
+
   .authorBibliografia
-    position: relative
     .authorData
-      +flex(row, flex-start)
-      .authorFoto
-        background-color: $maize
-        background-position: -70px -73px
-        background-repeat: no-repeat
-        background-size: 925px
-        height: 500px
-    .authorParrafo
-      background-color: $gray
-      position: absolute
-      right: 0
-      bottom: -11px
-      .authorDerecha
-        p
-          padding: 33px 10px 0 26px
-      .authorBtn
-        margin: 22px 0
-        +flex(row, flex-end)
-        .authorClik
-          .btn-more
-  .authorVisita
-    margin-top: 3em
-    .authorTitle
-    h2
-      font-size: 44px
+      .authorInfo
+        +flex(column, center)
+        .authorFoto
+          z-index: 0
+          padding-left: 0
+          .authorSilvana
+            background-color: $maize
+            background-position: top left
+            background-repeat: no-repeat
+            background-size: auto
+            height: 500px
+
+
+        .authorParrafo
+          border-radius: 3px
+          margin-top: -128px
+          .authorDerecha
+            margin-top: 0
+            p
+              padding: 33px 10px 0 26px
+          .authorBtn
+            margin: 22px 0
+            +flex(row, flex-end)
+      .authorVisita
+        +flex(row, center)
+        text-align: right
+        margin-top: -12px
+        margin-left: -29px
+        margin-right: 38px
+        .authorTitle
+          h2
+            font-size: 44px
+        .authorDireccion
+          z-index: 3
 
 +desktop
   .authorSingle
@@ -105,35 +121,21 @@
 
   .authorBibliografia
     .authorData
-      +flex(column, flex-start)
-      .authorFoto
-        background-color: $maize
-        background-position: top center
-        background-repeat: no-repeat
-        background-size: cover
-        height: 500px
-        border-bottom: 31px solid $maize
-    .authorParrafo
-      background-color: $gray
-      transform: translateY(50%)
-      .authorDerecha
-        p
-          padding: 35px 50px 0 80px
-
-  .authorVisita
-    margin-top: 25em
-    position: relative
-    .authorDireccion
-      position: absolute
-      right: 53px
-      bottom: 110px
-      background-position: center
-      background-repeat: no-repeat
-      background-size: contain
-      width: 207px
-      height: 125px
-    .authorTitle
-      text-align: right
-      h2
-        margin-right: 210px
-        font-size: 60px
+        .authorInfo
+          .authorFoto
+            .authorSilvana
+              background-color: $maize
+              background-position: top center
+              background-repeat: no-repeat
+              background-size: cover
+              height: 500px
+              border-bottom: 31px solid $maize
+          .authorParrafo
+            .authorDerecha
+              p
+                padding: 35px 50px 0 80px
+        .authorVisita
+          .authorTitle
+            margin-top: 73px
+            margin-right: -8px
+            h2
