@@ -1,4 +1,8 @@
+<?php if(is_404()):?>
+  <section class="hidden">
+<?php else: ?>
 <section class="suscripcion u-paddingSection">
+<?php endif; ?>
   <div class="suscripcionContainer">
     <div class="suscripcionData ">
       <h3>Obtén ofertas especiales además de cupones y descuentos para nuestros servicios.</h3>
