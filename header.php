@@ -25,7 +25,12 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <header class="menu container">
+    <?php if (is_search()): ?>
+      <header class="menu container searchpage">
+    <?php else : ?>
+      <header class="menu container">
+    <?php endif; ?>
+
 
       <a href="<?php bloginfo('url') ?>">
         <figure class="brand">
