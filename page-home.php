@@ -11,11 +11,11 @@
     <h2>
       <?php the_field('home_title') ?>
     </h2>
-    <p>
+    <strong>
       <?php the_field('home_subtitle') ?>
-    </p>
+    </strong>
   </div>
-  <div class="welcome-content  col-xs-12 col-sm-10 col-md-8">
+  <div class="welcome-content  col-xs-12 col-sm-10 col-md-8" style="margin-top:40px;">
     <p>
       <?php the_field('home_bienvenida') ?>
     </p>
