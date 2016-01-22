@@ -32,11 +32,11 @@
     <?php endif; ?>
 
 
-      <a href="<?php bloginfo('url') ?>">
-        <figure class="brand">
-          <img class="brand-steticorp " src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
-        </figure>
-      </a>
+    <a href="<?php bloginfo('url') ?>">
+      <figure class="brand">
+        <img class="brand-steticorp" src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
+      </figure>
+    </a>
 
       <?php wp_nav_menu(
         array(

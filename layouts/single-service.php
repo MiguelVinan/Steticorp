@@ -1,4 +1,4 @@
-<div class="">    
+<div class="single-treatment">
   <a href="#" data-toggle="modal" data-target="#myModal-<?php the_ID(); ?> ">
     <article class="singleService col-xs-12 col-sm-4">
       <figure class="imgService" style="background-image:url('<?= $url ?>');">
@@ -25,7 +25,7 @@
               <article class="col-xs-12">
                 <h4>¿Qué es?</h4>
                 <p><?php the_field('question_one') ?></p>
-              </article>              
+              </article>
             <?php endif ?>
             <?php if (get_field('question_two')): ?>
               <article class="col-xs-12">
@@ -43,7 +43,7 @@
               <article class="col-xs-12">
                 <h4>¿Cuantas sesiones aproximadamente necesitas para ver resultados?</h4>
                 <p><?php the_field('question_four') ?></p>
-              </article>              
+              </article>
             <?php endif ?>
           </div>
         </div>
@@ -55,6 +55,6 @@
           </a>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 </div>

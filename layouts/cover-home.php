@@ -7,7 +7,7 @@
     <!-- Wrapper for slides -->
 
     <div class="carousel-inner" role="listbox">
-      <div class="coverLogo">
+      <div class="coverLogo hidden">
           <figure>
             <img class="logo" src="<?= get_template_directory_uri() . '/assets/images/logo.svg' ?>" alt="" />
           </figure>

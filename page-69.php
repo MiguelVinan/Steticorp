@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
   <?php include(locate_template('layouts/cover.php')) ?>
-  <section class="u-paddingSection container">
+  <section class="u-paddingSection container services-treatment">
 
     <?php rewind_posts(); ?>
-    <?php query_posts(array ('posts_per_page' => 9999, 'post_type'=> 'corporales' )) ?>
+    <?php query_posts(array ('posts_per_page' => -1, 'post_type'=> 'corporales' )) ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <?php
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post -> ID ), 'medium' );
