@@ -5,7 +5,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section class="single-article u-paddingSection">
   <div class="container">
-    <article>
+    <article class="col-xs-12 col-sm-9">
     <?php the_content(); ?>
     </article>
     <span class="signature"><img src="<?=  get_template_directory_uri() . '/assets/images/silvania-hidalgo.svg' ?>" alt=""></span>
