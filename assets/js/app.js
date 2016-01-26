@@ -5,4 +5,4 @@ $(function(){var n=$(".menu").find("button"),t=$(".menu").find("nav");n.click(fu
 $(function(){var n=($(".pagination-links").find(".page-numbers"),$(".pagination-links").find(".next")),i=$(".pagination-links").find(".prev");i.html('<i class="icon-chevron-left"></i><span>Articulos nuevos</span>'),n.html('<span>Articulos Anteriores</span><i class="icon-chevron-right"></i>')});
 $(function(){function n(){o.toggleClass("is-readyToSearch"),i.toggleClass("is-iconReady")}var o=$("#searchform").find(".inputText"),i=$("#searchform").find("i");o.focusin(function(){n()}),o.focusout(function(){n()})});
 $(function(){for(var e=$(".services-treatment"),t=e.find(".single-treatment"),i=0;i<t.length;i+=3)t.slice(i,i+3).wrapAll("<div class='row'></div>")});
-$(function(){var l=$(".single-article").find(".texto");l.addClass("col-xs-12 col-sm-11 col-md-8")});
+$(function(){var l=$(".single-article");l.find("p").addClass("texto");var a=$(".single-article").find(".texto");a.addClass("col-xs-12 col-sm-11 col-md-8")});

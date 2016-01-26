@@ -40,6 +40,5 @@
   </div>
 </section>
 
-<?php include(locate_template('layouts/suscripcion.php')) ?>
 <?php get_footer(); ?>
 <!-- hidden-xs -->
