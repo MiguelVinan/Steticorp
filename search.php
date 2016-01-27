@@ -19,6 +19,9 @@
 
 						<a href="<?php the_permalink() ?>" class="result">
 							<h3> <?php the_title() ?> </h3>
+							<div class="">
+								<?php the_excerpt(); ?>
+							</div>
 							<div class="meta">
 								<time><strong><?php the_time('j F, Y'); ?></strong></time>
 								<span class="btn-go"><i class="fa fa-arrow-circle-right"></i></span>
