@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <?php include(locate_template('layouts/cover.php')) ?>
-<?php include(locate_template('layouts/barnner.php')) ?>
 <section class="allServices u-paddingSection container-fluid">
   <div class="row">
     <?php
@@ -70,5 +69,6 @@
   </div>
 </section>
 
+<?php include(locate_template('layouts/barnner.php')) ?>
 
 <?php get_footer(); ?>
