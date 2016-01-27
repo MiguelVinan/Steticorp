@@ -35,5 +35,11 @@
 <?php endwhile; else : ?>
   <p><?php _e( 'Lo sentimos, no tenemos imagen por el momento :(' ); ?></p>
 <?php endif; ?>
+<?php wp_reset_query(); ?>
 
+<section class="related-posts">
+  <div class="container">
+    <?php include(locate_template('layouts/related-posts.php')); ?>
+  </div>
+</section>
 <?php get_footer() ?>

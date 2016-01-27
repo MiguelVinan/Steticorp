@@ -118,8 +118,8 @@ add_filter( 'login_headertitle', 'mi_logo_personalizado_url_titulo' );
    $args = array(
      'labels'          => $labels,
      'public'          => true,
-     'taxonomies'      => array('category'),
-     'supports'        => array( 'title', 'editor', 'thumbnail','excerpt','author', 'comments' ),
+     'taxonomies'      => array('category', 'post_tag'),
+     'supports'        => array( 'title', 'editor', 'thumbnail','excerpt','author', 'comments', 'tags'),
      'show_in_menu'    => true,
      'menu_position'   => 4,
      'can_export'      => true,
