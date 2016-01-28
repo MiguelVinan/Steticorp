@@ -23,7 +23,7 @@
         <div class="image col-xs-12" style="background-image:url('<?= the_field('third_image') ?>');">
         </div>
         <article class="infoBox infoBox--right col-xs-12 col-sm-12 col-md-12">
-          <h4>N<?php the_field('title_third_section') ?></h4>
+          <h4><?php the_field('title_third_section') ?></h4>
           <p><?php the_field('description_third_section') ?></p>
         </article>
       </section>
