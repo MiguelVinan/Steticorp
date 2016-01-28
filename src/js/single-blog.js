@@ -1,4 +1,4 @@
-$(function(){
+(function(){
   var $singleArticle = $('.single-article');
   $singleArticle.find('p').addClass('texto');
 
@@ -19,9 +19,13 @@ $(function(){
       var scrollBottom = $(this).scrollTop() + $(window).height();
       var scrollTop = $(this).scrollTop();
 
-      (scrollTop > cvrheight && scrollBottom < artheight) ? navBottom.addClass('shared-on') : navBottom.removeClass("shared-on");
+      if (scrollTop > cvrheight && scrollBottom < artheight){
+        navBottom.addClass('shared-on');
+      } else{
+        navBottom.removeClass("shared-on");
+      }
 
     });
-});
+  });
 
-})
+})();

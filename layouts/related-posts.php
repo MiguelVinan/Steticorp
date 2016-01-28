@@ -1,11 +1,13 @@
 <div class="relatedposts row">
-<h3 class="text-center relatedposts-title">TAMBÍEN PODRÍA GUSTARTE…</h3>
 <?php
     $orig_post = $post;
     global $post;
     $tags = wp_get_post_tags($post->ID);
 
     if ($tags) {
+    ?>
+    <h3 class="text-center relatedposts-title">TAMBÍEN PODRÍA GUSTARTE…</h3>
+    <?php
     $tag_ids = array();
     foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
     $args=array(

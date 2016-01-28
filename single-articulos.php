@@ -8,7 +8,7 @@
     <article>
     <?php the_content(); ?>
     </article>
-    <span class="signature"><img src="<?=  get_template_directory_uri() . '/assets/images/silvania-hidalgo.svg' ?>" alt=""></span>
+    <span class="signature"><img style="width:200px;" src="<?=  get_template_directory_uri() . '/assets/images/signature.png' ?>" alt=""></span>
   </div>
   <div class="share-article">
     <div class="share-container container">

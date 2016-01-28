@@ -4,6 +4,11 @@
     article
       +flex(column, center, center)
       margin: 0 auto
+      a
+        color: $maize
+        text-transform: initial
+        &:hover
+          color: darken($maize, 10%)
       p:first-child
         &::first-letter
           font-family: "authenticHilton"
