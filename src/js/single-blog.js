@@ -9,7 +9,7 @@
   $blogText.addClass('col-xs-12 col-sm-11 col-md-9');
   $blogList.addClass('col-xs-12 col-sm-10 col-md-8');
 
-  $(document).on('ready',function(){
+  $(window).on('load',function(){
     var coverHeight = $(".cover--single").height();
     var cvrheight = coverHeight / 1.8;
     var navBottom = $('.share-article');
