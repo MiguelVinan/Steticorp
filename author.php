@@ -23,7 +23,7 @@
         </div>
         <div class="authorBtn col-xs-12 col-sm-12">
           <div class="authorClik">
-            <a href="#" class="btn-more">Visita nuestro blog</a>
+            <a href="//steticorp.com/blog" class="btn-more">Visita nuestro blog</a>
           </div>
         </div>
       </div>
