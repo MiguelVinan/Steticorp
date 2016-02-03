@@ -1,4 +1,4 @@
-<div id="carousel-generic" class="cover carousel slide" data-ride="carousel" data-pause="">
+<div id="carousel-generic" class="cover carousel slide" data-ride="carousel" data-pause="" data-interval="10000">
   <?php if( have_rows('home_carousel') ): ?>
     <ol class="carousel-indicators">
       <?php $counter = 0; ?>
