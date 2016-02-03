@@ -12,9 +12,10 @@
     }else {
       ?> - Inicio <?php
     }?> </title>
-
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- description -->
+    <meta name="author" content="Miguel Viñan">
+    <link name="canonical" href="//steticorp.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <!-- description -->
     <meta name="author" content="Miguel Viñan">
   	<?php if (is_single() || is_page() ) : if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   	<meta name="description" content="<?php the_excerpt_rss(); ?>" />

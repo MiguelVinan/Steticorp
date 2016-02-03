@@ -32,11 +32,9 @@
           </div>
         </div>
       </div>
-
-          <?php endwhile;
+      <?php endwhile;
       else : ?>
-
       <?php endif; ?>
     </div>
-
+  </a>
 </div>
