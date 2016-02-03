@@ -1,16 +1,16 @@
 <?php get_header(); ?>
 
   <?php include(locate_template('layouts/cover-contact.php')) ?>
-  <section class="u-paddingSection-xs container">
+  <section class="u-paddingSection-xs container Contacts">
     <div class="row">
-      <address class="col-xs-12 col-sm-4">
+      <address class="col-xs-12 col-sm-4 phones">
         <h3 style="padding-left:0;">Teléfono</h3>
       <?php if(have_rows('contact_phones')):
         while(have_rows('contact_phones')) : the_row(); ?>
         <p> <?php the_sub_field('phone'); ?> </p>
       <?php endwhile;
         else :
-        endif; 
+        endif;
       ?>
       </address>
       <address class="col-xs-12 col-sm-4">
@@ -20,7 +20,7 @@
         <p> <?php the_sub_field('contact_address'); ?> </p>
       <?php endwhile;
         else :
-        endif; 
+        endif;
       ?>
       </address>
       <address class="col-xs-12 col-sm-4">
@@ -30,9 +30,9 @@
         <p> <?php the_sub_field('contact_mail'); ?> </p>
       <?php endwhile;
         else :
-        endif; 
+        endif;
       ?>
-      </address>    
+      </address>
     </div>
   </section>
 
