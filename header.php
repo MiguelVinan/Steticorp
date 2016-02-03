@@ -26,6 +26,7 @@
     <?php wp_head(); ?>
   </head>
   <body>
+    <?php include(locate_template('layouts/tag-manager.php')); ?>
     <?php if (is_search() || is_404()): ?>
       <header class="menu container searchpage">
     <?php else : ?>
