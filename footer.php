@@ -24,8 +24,8 @@
   </section>
   <div class="autor col-xs-12">
     <p>
-      <span>© 2015 , StetiCorp all rights reserved</span>
-      <span>developed & designed by <a href="http://miguelvinan.com/" target="_blank">miguelvinan.com</a></span>
+      <span>©<?= date("Y");?> , StetiCorp all rights reserved</span>
+      <span>developed & designed by <a href="//miguelvinan.com/" target="_blank">miguelvinan.com</a></span>
     </p>
   </div>
 <?php endwhile; else : ?>
