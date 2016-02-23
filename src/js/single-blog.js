@@ -2,12 +2,17 @@
   var $singleArticle = $('.single-article');
   $singleArticle.find('p').addClass('texto');
 
+  var $blockquote = $('blockquote');
+
   var $blogText = $singleArticle.find('.texto'),
       $blogList = $singleArticle.find('ol, ul');
 
   /* Adding class to paragraph in articles single view*/
   $blogText.addClass('col-xs-12 col-sm-11 col-md-9');
   $blogList.addClass('col-xs-12 col-sm-10 col-md-8');
+  $blockquote.addClass('col-xs-12 col-sm-10 col-md-8');
+  $blockquote.find("p").removeClass('col-xs-12 col-sm-11 col-md-9');
+
 
   $(window).on('load',function(){
     var coverHeight = $(".cover--single").height();
