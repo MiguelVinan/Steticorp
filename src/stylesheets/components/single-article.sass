@@ -4,6 +4,7 @@
     article
       +flex(column, center, center)
       margin: 0 auto
+      width: 100%
       a
         color: $maize
         text-transform: initial
@@ -43,9 +44,10 @@
         &::before
           color: black
           font-weight: bold
-      img
+      img,
+      .wp-caption
         border-radius: 3px
-        width: 100%
+        width: 100% !important
         height: auto !important
         .wp-caption-text
           font-weight: $bold
