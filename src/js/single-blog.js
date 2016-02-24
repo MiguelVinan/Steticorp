@@ -13,7 +13,7 @@
   $blockquote.addClass('col-xs-12 col-sm-10 col-md-8');
   $blockquote.find("p").removeClass('col-xs-12 col-sm-11 col-md-9');
 
-
+/*navBottom append to bottom window*/
   $(window).on('load',function(){
     var coverHeight = $(".cover--single").height();
     var cvrheight = coverHeight / 1.8;
