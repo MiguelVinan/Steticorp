@@ -35,7 +35,7 @@
     </div>
     <!--End mc_embed_signup-->
     <div class="suscripcionImagen">
-      <img class="suscripcionLinea " src="<?= get_template_directory_uri() . "/assets/images/subscription-line.svg"?>">
+      <img class="suscripcionLinea hidden" src="<?= get_template_directory_uri() . "/assets/images/subscription-line.svg"?>">
       </div>
     </div>
   </div>
